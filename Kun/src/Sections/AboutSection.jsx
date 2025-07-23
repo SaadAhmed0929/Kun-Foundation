@@ -1,12 +1,53 @@
-export default function AboutSection() {
-  return (
-    <section className="min-h-screen flex items-center justify-center px-8 bg-white text-gray-900">
-      <div className="max-w-5xl text-center">
-        <h2 className="text-4xl font-bold mb-4">Who We Are</h2>
-        <p className="text-xl text-gray-600">
-          We are a non-profit organization dedicated to improving lives through food, education, and compassion.
-        </p>
-      </div>
-    </section>
-  );
-}
+import React from "react";
+
+const AboutSection = () => {
+    return (
+        <section className="py-20 px-5 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 lg:gap-40 items-center">
+                
+                {/* Text Content */}
+                <div className="w-full flex justify-center">
+                    <div className="w-full max-w-[500px]">
+                        <p className="text-green-700 text-base sm:text-base mb-2 uppercase tracking-wide">
+                            About Us
+                        </p>
+                        <h2 className="text-3xl md:text-4xl xl:text-5xl font-small text-[#1c2c4c] leading-tight mb-6">
+                            We are tender heart <br /> charity foundation.
+                        </h2>
+                        <p className="text-gray-700 text-base md:text-lg mb-8 leading-relaxed">
+                            When a child gets access to good food, it can change just about
+                            everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                        <button className="px-6 md:px-7 py-3 md:py-4 text-sm md:text-lg font-semibold border-2 border-transparent bg-[#f45d48] text-white transition duration-300 hover:bg-white hover:text-[#f45d48] hover:border-[#f45d48]">
+                            Discover More
+                        </button>
+                    </div>
+                </div>
+
+                {/* Image */}
+                <div className="w-full flex justify-center">
+                    <div className="w-full max-w-[500px]">
+                        <img
+                            src="/images/about2.png"
+                            alt="Charity About Us"
+                            className="
+                                w-full 
+                                h-auto 
+                                object-contain 
+                                scale-100 
+                                md:scale-[1] 
+                                xl:scale-[1.3] 
+                                transition-transform 
+                                duration-300 
+                                ease-in-out 
+                            "
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default AboutSection;

@@ -75,8 +75,8 @@ export default function Navbar() {
         <div className="max-w-[1400px] mx-auto w-full flex items-center justify-between px-6 md:px-10 py-4 lg:py-6">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl sm:text-3xl font-bold tracking-wide">
-              Charitee
+            <Link to="/" className="text-2xl sm:text-3xl font-semibold tracking-wide">
+              Kun Foundation
             </Link>
           </div>
 
@@ -111,7 +111,7 @@ export default function Navbar() {
 
             {/* Donate Button */}
             <Link to="/donate" className="hidden sm:inline">
-              <button className="bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded text-sm xl:text-base flex items-center gap-2 transition-all duration-300 transform hover:scale-[1.03] hover:shadow-md">
+              <button className="bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 text-sm xl:text-base flex items-center gap-2 transition-all duration-300 transform hover:scale-[1.03] hover:shadow-md">
                 <Heart size={18} className="transition-transform group-hover:rotate-[8deg]" />
                 Make A Donation
               </button>

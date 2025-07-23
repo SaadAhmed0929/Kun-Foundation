@@ -48,10 +48,11 @@ export default function Hero() {
           "
                 >
                     <h1 className="text-2xl sm:text-4xl md:text-6xl font-semibold leading-tight mb-4 sm:mb-6">
-                        Give a helping hand to those who need it!
+                        Together, we can uplift lives!
+
                     </h1>
-                    <p className="text-base sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 opacity-70 italic sm:not-italic">
-                        When a child gets access to good food, it can change just about everything.
+                    <p className="text-base sm:text-xl md:text-lg text-gray-200 mb-6 sm:mb-8 opacity-70 italic ">
+                       Break the cycle of poverty and build a future where everyone has the chance to thrive with dignity.
                     </p>
 
                     <button
@@ -62,7 +63,7 @@ export default function Hero() {
               border-2 font-semibold border-transparent 
               bg-teal-500 hover:bg-transparent 
               hover:border-white hover:text-white 
-              text-white transition-all duration-300 rounded
+              text-white transition-all duration-300
             "
                     >
                         Ongoing Programs
