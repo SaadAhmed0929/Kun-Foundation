@@ -90,7 +90,7 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="text-center text-sm py-4 border-t border-white/20">
-                ©2025 All rights reserved | This template is made with ❤️
+                ©2025 All rights reserved
             </div>
 
             {/* Scroll to Top */}
