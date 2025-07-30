@@ -6,8 +6,8 @@ import DonateSection from '../Sections/DonateSection';
 import AboutSection from '../Sections/AboutSection';
 import CardSection from '../Sections/CardSection';
 import JoinUs from '../Sections/JoinUs';
-import ProgramsSection from '../Sections/ProgramsSection';
-import ImpactSection from '../Sections/ImpactSection';
+import HelpSection from '../Sections/HelpSection';
+import BlogCarousel from '../Sections/blogSection';
 
 export default function Home() {
     const containerRef = useRef(null);
@@ -31,8 +31,8 @@ export default function Home() {
             <AboutSection />
             <CardSection />
             <JoinUs />
-            <ProgramsSection />
-            <ImpactSection />
+            <HelpSection/>
+            <BlogCarousel/>
         </div>
     );
 }
