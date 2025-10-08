@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
     return (
-        <section className="py-20 px-5 bg-gray-50">
+        <section className="py-20 px-5 bg-[gray-50]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 lg:gap-40 items-center">
                 
                 {/* Text Content */}
@@ -19,7 +19,7 @@ const AboutSection = () => {
                             everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation.
                         </p>
-                        <button className="px-6 md:px-7 py-3 md:py-4 text-sm md:text-lg font-semibold border-2 border-transparent bg-[#f45d48] text-white transition duration-300 hover:bg-white hover:text-[#f45d48] hover:border-[#f45d48]">
+                        <button className="px-6 md:px-7 py-3 md:py-4 text-sm md:text-lg font-semibold border-2 border-transparent bg-[#454603] text-white transition duration-300 hover:bg-white hover:text-[#f45d48] hover:border-[#f45d48]">
                             Discover More
                         </button>
                     </div>

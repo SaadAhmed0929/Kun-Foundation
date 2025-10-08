@@ -80,7 +80,7 @@ const BlogCarousel = () => {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <p className="text-teal-500 text-sm font-medium mb-2">News</p>
+        <p className="text-[#454603] text-sm font-medium mb-2">News</p>
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-4xl font-semibold text-gray-800">Latest Blog</h2>
           <div className="space-x-3">

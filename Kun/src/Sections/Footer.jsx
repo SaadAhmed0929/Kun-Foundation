@@ -22,7 +22,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#d96245] text-white relative">
+        <footer className="bg-[#454603] text-white relative">
             <div className="max-w-7xl mx-auto py-16 px-6 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                 {/* Logo */}
                 <div className="col-span-full md:col-span-1">
@@ -80,7 +80,7 @@ const Footer = () => {
                     </p>
                     <ScrollLink
                         to="/contact"
-                        className="inline-block text-center bg-white text-[#d96245] font-semibold px-5 py-2 rounded border border-white hover:bg-transparent hover:text-white transition-all duration-300"
+                        className="inline-block text-center bg-white text-[#454603] font-semibold px-5 py-2 rounded border border-white hover:bg-transparent hover:text-white transition-all duration-300"
                     >
                         Join Us Today
                     </ScrollLink>
@@ -96,7 +96,7 @@ const Footer = () => {
             {/* Scroll to Top */}
             <button
                 onClick={scrollToTop}
-                className="fixed bottom-6 right-6 bg-teal-500 hover:bg-teal-600 text-white p-4 text-lg rounded-full shadow-lg z-50 transition-all"
+                className="fixed bottom-6 right-6 bg-[#454603] hover:bg-[#5c5f0a] text-white p-4 text-lg rounded-full shadow-lg z-50 transition-all"
                 aria-label="Scroll to top"
             >
                 <FaArrowUp />

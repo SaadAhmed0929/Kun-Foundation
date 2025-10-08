@@ -21,7 +21,7 @@ const features = [
 
 const HelpSection = () => {
   return (
-    <section className="bg-[#d96245] text-white py-20 px-4">
+    <section className="bg-[#454603] text-white py-20 px-4">
       <div className="text-center mb-14">
         <p className="text-sm tracking-wide mb-2">Helping Today</p>
         <h2 className="text-4xl font-semibold">How we help people</h2>
@@ -29,8 +29,11 @@ const HelpSection = () => {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
         {features.map((item, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="bg-white/10 rounded-full w-20 h-20 flex items-center justify-center mb-6">
+          <div
+            key={index}
+            className="flex flex-col items-center transition-transform duration-300 hover:scale-105"
+          >
+            <div className="bg-white/10 hover:bg-white/20 rounded-full w-20 h-20 flex items-center justify-center mb-6 transition-colors duration-300">
               {item.icon}
             </div>
             <h3 className="text-xl font-semibold mb-4">{item.title}</h3>

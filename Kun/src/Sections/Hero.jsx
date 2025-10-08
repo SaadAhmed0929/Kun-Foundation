@@ -37,15 +37,15 @@ export default function Hero() {
                 <div
                     ref={contentRef}
                     className="
-            max-w-[300px]
-            sm:max-w-[520px]
-            text-left
-            ml-4 sm:ml-6 md:ml-10 lg:ml-40
-            px-4
-            text-[17px] sm:text-base
-            md:scale-80 lg:scale-100
-            sm:static absolute bottom-20 left-1
-          "
+                        max-w-[300px]
+                        sm:max-w-[520px]
+                        text-left
+                        ml-4 sm:ml-6 md:ml-10 lg:ml-40
+                        px-4
+                        text-[17px] sm:text-base
+                        md:scale-80 lg:scale-100    
+                        sm:static absolute bottom-20 left-1
+                    "
                 >
                     <h1 className="text-2xl sm:text-4xl md:text-6xl font-semibold leading-tight mb-4 sm:mb-6">
                         Together, we can uplift lives!
@@ -57,14 +57,14 @@ export default function Hero() {
 
                     <button
                         className="
-              text-[13px] sm:text-base md:text-lg 
-              px-4 sm:px-8 
-              py-2 sm:py-4 
-              border-2 font-semibold border-transparent 
-              bg-teal-500 hover:bg-transparent 
-              hover:border-white hover:text-white 
-              text-white transition-all duration-300
-            "
+                text-[13px] sm:text-base md:text-lg 
+                px-4 sm:px-8 
+                py-2 sm:py-4 
+                border-2 font-semibold border-transparent 
+                bg-[#454603] hover:bg-transparent 
+                hover:border-white hover:text-white 
+                text-white transition-all duration-300
+                "
                     >
                         Ongoing Programs
                     </button>
