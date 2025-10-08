@@ -1,6 +1,5 @@
-import React from "react";
-import ScrollLink from "../Components/ScrollLink.jsx"; // adjust path if needed
-import { Link } from "react-router-dom";
+import React, { useEffect, useState, useRef } from "react";
+import ScrollLink from "../Components/ScrollLink.jsx";
 import {
     FaFacebookF,
     FaLinkedinIn,
@@ -11,6 +10,9 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+    const [isFooterVisible, setIsFooterVisible] = useState(false);
+    const footerRef = useRef(null);
+
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
     const navLinks = [
@@ -21,8 +23,26 @@ const Footer = () => {
         { label: "Contact", path: "/contact" },
     ];
 
+    // Observe footer visibility
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    setIsFooterVisible(entry.isIntersecting);
+                });
+            },
+            { threshold: 0.1 } // triggers when 10% of footer is visible
+        );
+
+        if (footerRef.current) observer.observe(footerRef.current);
+
+        return () => {
+            if (footerRef.current) observer.unobserve(footerRef.current);
+        };
+    }, []);
+
     return (
-        <footer className="bg-[#454603] text-white relative">
+        <footer ref={footerRef} className="bg-[#454603] text-white relative">
             <div className="max-w-7xl mx-auto py-16 px-6 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                 {/* Logo */}
                 <div className="col-span-full md:col-span-1">
@@ -85,18 +105,21 @@ const Footer = () => {
                         Join Us Today
                     </ScrollLink>
                 </div>
-
             </div>
 
             {/* Bottom Bar */}
             <div className="text-center text-sm py-4 border-t border-white/20">
-                ©2025 All rights reserved
+                ©2025 KUN Foundation All rights reserved
             </div>
 
             {/* Scroll to Top */}
             <button
                 onClick={scrollToTop}
-                className="fixed bottom-6 right-6 bg-[#454603] hover:bg-[#5c5f0a] text-white p-4 text-lg rounded-full shadow-lg z-50 transition-all"
+                className={`fixed bottom-6 right-6 p-4 text-lg rounded-full shadow-lg z-50 transition-all duration-300 ${
+                    isFooterVisible
+                        ? "bg-white text-[#454603]"
+                        : "bg-[#454603] text-white hover:bg-[#5c5f0a]"
+                }`}
                 aria-label="Scroll to top"
             >
                 <FaArrowUp />
