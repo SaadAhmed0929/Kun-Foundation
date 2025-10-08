@@ -21,7 +21,7 @@ const features = [
 
 const HelpSection = () => {
   return (
-    <section className="bg-[#454603] text-white py-20 px-4">
+    <section  id="helpSection" className="bg-[#454603] text-white py-20 px-4">
       <div className="text-center mb-14">
         <p className="text-sm tracking-wide mb-2">Helping Today</p>
         <h2 className="text-4xl font-semibold">How we help people</h2>

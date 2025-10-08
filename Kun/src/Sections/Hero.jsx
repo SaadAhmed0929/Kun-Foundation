@@ -23,7 +23,7 @@ export default function Hero() {
 
             {/* Background Image */}
             <img
-                src="/images/hero.webp"
+                src="/images/hero1.jpg"
                 alt="Hero"
                 className="absolute inset-0 w-full h-full object-cover opacity-50"
             />
@@ -48,7 +48,7 @@ export default function Hero() {
                     "
                 >
                     <h1 className="text-2xl sm:text-4xl md:text-6xl font-semibold leading-tight mb-4 sm:mb-6">
-                        Together, we can uplift lives!
+                        Lifting lives with dignity
 
                     </h1>
                     <p className="text-base sm:text-xl md:text-lg text-gray-200 mb-6 sm:mb-8 opacity-70 italic ">

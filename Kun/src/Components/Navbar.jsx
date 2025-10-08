@@ -79,24 +79,42 @@ export default function Navbar() {
   return (
     <>
       {/* === Top Bar === */}
-      <div className="w-full bg-[#454603] text-white text-sm py-2 px-6 md:px-10 flex flex-col sm:flex-row justify-between items-center">
+      <div className="w-full bg-[#454603] text-white text-sm py-2 px-6 md:px-10 flex justify-between items-center">
+        {/* Left side (phone + email for larger screens, phone only for mobile) */}
         <div className="flex items-center gap-4">
-          <a href="tel:+923164396658" className="flex items-center gap-1 hover:text-green-400 transition">
+          <a
+            href="tel:+923284797092"
+            className="flex items-center gap-1 hover:text-green-400 transition"
+          >
             <Phone size={15} />
-            +92 316 4396658
+            +92 328 4797092
           </a>
+
+          {/* Hide email and divider on small screens */}
           <span className="hidden sm:inline">|</span>
-          <a href="mailto:info@kunfoundation.org" className="flex items-center gap-1 hover:text-green-400 transition">
+          <a
+            href="mailto:kunfoundation.org@gmail.com"
+            className="hidden sm:flex items-center gap-1 hover:text-green-400 transition"
+          >
             <Mail size={15} />
-            info@kunfoundation.org
+            kunfoundation.org@gmail.com
           </a>
         </div>
 
-        <div className="flex gap-3 mt-1 sm:mt-0">
-          <a href="#" className="hover:text-green-400 transition"><Facebook size={17} /></a>
-          <a href="#" className="hover:text-green-400 transition"><Instagram size={17} /></a>
-          <a href="#" className="hover:text-green-400 transition"><Linkedin size={17} /></a>
-          <a href="#" className="hover:text-green-400 transition"><Youtube size={17} /></a>
+        {/* Right side (socials always visible) */}
+        <div className="flex gap-3">
+          <a href="#" className="hover:text-green-400 transition">
+            <Facebook size={17} />
+          </a>
+          <a href="#" className="hover:text-green-400 transition">
+            <Instagram size={17} />
+          </a>
+          <a href="#" className="hover:text-green-400 transition">
+            <Linkedin size={17} />
+          </a>
+          <a href="#" className="hover:text-green-400 transition">
+            <Youtube size={17} />
+          </a>
         </div>
       </div>
 
@@ -125,8 +143,8 @@ export default function Navbar() {
             />
             <Link
               to="/"
-              className={`font-semibold tracking-wide whitespace-nowrap transition-all duration-500 ${
-                scrolled ? "text-lg" : "text-2xl sm:text-3xl"
+              className={`font-semibold tracking-wide whitespace-nowrap transition-all duration-300 left-padding: 3px ${
+                scrolled ? "text-lg" : "text-2xl sm:text-2xl"
               }`}
               style={{ fontFamily: "Century Gothic, sans-serif" }}
             >
@@ -134,16 +152,18 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Nav Links (hide on scroll) */}
-          {!scrolled && (
-            <ul className="hidden lg:flex gap-4 xl:gap-8 mx-6 text-sm xl:text-base font-medium whitespace-nowrap">
-              {NAV_LINKS.map(({ label, path }) => (
-                <li key={path}>
-                  <NavLink to={path}>{label}</NavLink>
-                </li>
-              ))}
-            </ul>
-          )}
+          {/* Nav Links (Desktop) */}
+          <ul
+            className={`hidden lg:flex gap-4 xl:gap-8 mx-6 text-sm xl:text-base font-medium whitespace-nowrap transition-all duration-300 ${
+              scrolled ? "translate-y-[-2px] scale-[0.97]" : "translate-y-0 scale-100"
+            }`}
+          >
+            {NAV_LINKS.map(({ label, path }) => (
+              <li key={path}>
+                <NavLink to={path}>{label}</NavLink>
+              </li>
+            ))}
+          </ul>
 
           {/* Donate + Menu */}
           <div className="flex items-center gap-4 xl:gap-6">
@@ -171,7 +191,9 @@ export default function Navbar() {
       </nav>
 
       {/* === Mobile Sidebar === */}
-      {isOpen && <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-[80] lg:hidden transition-opacity" />}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-[80] lg:hidden transition-opacity" />
+      )}
 
       <aside
         id="mobileSidebar"
@@ -180,7 +202,10 @@ export default function Navbar() {
         }`}
       >
         <div className="flex justify-end p-4 border-b border-gray-200">
-          <button onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-red-500 transition">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-gray-600 hover:text-red-500 transition"
+          >
             <X size={24} />
           </button>
         </div>
@@ -200,8 +225,11 @@ export default function Navbar() {
 
           <hr className="w-full border-gray-200" />
 
-          <a href="tel:+923164396658" className="text-sm font-light text-gray-600 underline underline-offset-4 decoration-dashed hover:text-green-600 transition">
-            +92 316 4396658
+          <a
+            href="tel:+923164396658"
+            className="text-sm font-light text-gray-600 underline underline-offset-4 decoration-dashed hover:text-green-600 transition"
+          >
+            +92 328-4797092
           </a>
 
           <Link to="/donate" onClick={handleMobileLinkClick} className="pt-2">

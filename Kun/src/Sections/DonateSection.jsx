@@ -48,7 +48,7 @@ const DonateSection = () => {
                 {/* Left Image */}
                 <div>
                     <img
-                        src="/images/about1.jpg"
+                        src="/images/plantation.jpg"
                         alt="Donate Program"
                         className="rounded-md w-full h-[500px] object-cover"
                     />
@@ -60,16 +60,16 @@ const DonateSection = () => {
                         Upcoming Program
                     </p>
                     <h2 className="text-3xl md:text-4xl font-semibold text-[#1c2c4c] leading-tight mb-6">
-                        Donate vitamin B12 <br /> supply program
+                        Plantation of Trees <br /> Environmental Drive
                     </h2>
                     <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
-                        When a child gets access to good food, it can change just about
-                        everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation.
+                        When a community comes together to plant trees, it nurtures life for generations. 
+                        Each sapling strengthens our environment and inspires hope for a greener tomorrow. 
+                        Join us in restoring balance to nature, one tree at a time.
                     </p>
                     <div className="flex flex-wrap gap-5">
                         {/* Donate Now Button */}
-                        <button className="w-full md:w-auto bg-[#454603] text-white px-7 py-4 text-lg font-semibold border-2 border-transparent transition duration-300 hover:bg-[#fef4ed] hover:text-[#454603] hover:border-[#454603]">
+                        <button className="w-full md:w-auto bg-[#454603] text-white px-7 py-4 text-lg font-semibold border-2 border-transparent transition duration-300 hover:bg-[#e9e9cb] hover:text-[#454603] hover:border-[#454603]">
                             Donate Now
                         </button>
 

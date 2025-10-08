@@ -30,7 +30,7 @@ const JoinUs = () => {
         {/* Text on Right */}
         <div className="w-full flex justify-center">
           <div className="w-full max-w-[500px]">
-            <p className="text-green-700 text-base sm:text-base mb-2 uppercase tracking-wide">
+            <p className="text-[#454603] text-base sm:text-base mb-2 uppercase tracking-wide">
               Helping Today
             </p>
             <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold text-[#1c2c4c] leading-tight mb-6">
@@ -41,7 +41,7 @@ const JoinUs = () => {
               everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation.
             </p>
-            <button className="px-6 md:px-7 py-3 md:py-4 text-sm md:text-lg font-semibold border-2 border-transparent bg-[#f45d48] text-white transition duration-300 hover:bg-white hover:text-[#f45d48] hover:border-[#f45d48]">
+            <button className="px-6 md:px-7 py-3 md:py-4 text-sm md:text-lg font-semibold border-2 border-transparent bg-[#454603] text-white transition duration-300 hover:bg-gray-50 hover:text-[#454603] hover:border-[#454603]">
               Join Us Today
             </button>
           </div>

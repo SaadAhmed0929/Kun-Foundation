@@ -49,7 +49,7 @@ const Card = ({ image, title, description, tag, goal, raised }) => {
 
                     {/* Donate Button */}
                     <div className="flex-1 min-w-[110px] flex justify-end">
-                        <button className="flex items-center gap-2 bg-[#454603] text-white text-xs sm:text-sm md:text-base px-4 sm:px-5 md:px-6 py-2 font-semibold transition duration-300 hover:bg-white hover:text-[#f45d48] border-2 border-transparent hover:border-[#f45d48] w-full justify-center">
+                        <button className="flex items-center gap-2 bg-[#454603] text-white text-xs sm:text-sm md:text-base px-4 sm:px-5 md:px-6 py-2 font-semibold transition duration-300 hover:bg-white hover:text-[#454603] border-2 border-transparent hover:border-[#454603] w-full justify-center">
                             <Heart size={16} />
                             Donate
                         </button>

@@ -78,7 +78,7 @@ const BlogCarousel = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-[#e9e9cb]">
       <div className="max-w-7xl mx-auto">
         <p className="text-[#454603] text-sm font-medium mb-2">News</p>
         <div className="flex justify-between items-center mb-6">
@@ -118,7 +118,7 @@ const BlogCarousel = () => {
                   {post.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">{post.desc}</p>
-                <button className="text-red-600 font-semibold text-sm hover:underline">
+                <button className="text-[#454603] font-semibold text-sm hover:underline">
                   Read More
                 </button>
               </div>
