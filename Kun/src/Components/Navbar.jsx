@@ -106,7 +106,7 @@ export default function Navbar() {
         className={`fixed left-0 w-full z-50 text-white transition-all duration-500 ${
           scrolled
             ? "bg-[#454603]/90 py-3 shadow-md backdrop-blur-lg top-0"
-            : "bg-transparent py-5 top-[10px]"
+            : "bg-transparent py-5 top-[15px]"
         }`}
       >
         <div
