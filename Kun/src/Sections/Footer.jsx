@@ -81,11 +81,23 @@ const Footer = () => {
             When a child gets access to good education, it can change just about everything.
           </p>
           <div className="flex space-x-3">
-            {[FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube].map((Icon, i) => (
-              <a key={i} href="#" className="bg-white/10 hover:bg-white/20 p-3 rounded transition-all">
-                <Icon />
-              </a>
-            ))}
+            {[
+  { Icon: FaFacebookF, link: "https://www.facebook.com/profile.php?id=61572980026848&rdid=IVsETalcxFzrkJJ8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BxWRDfgfb%2F" },
+  { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/kunfoundation" },
+  { Icon: FaInstagram, link: "https://www.instagram.com/kun_foundation_org" },
+  { Icon: FaWhatsapp, link: "https://wa.me/923284797092" },
+].map(({ Icon, link }, i) => (
+  <a
+    key={i}
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/10 hover:bg-white/20 p-3 rounded transition-all"
+  >
+    <Icon />
+  </a>
+))}
+
           </div>
         </div>
 
