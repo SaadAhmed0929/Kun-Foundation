@@ -11,6 +11,15 @@ function About() {
                     animate={{ opacity: [0.3, 1, 0.3] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
                 >
+                    <div ref={containerRef}>
+                        <Hero />
+                        <DonateSection />
+                        <AboutSection />
+                        <CardSection />
+                        <JoinUs />
+                        <HelpSection/>
+                        <BlogCarousel/>
+                    </div>
                     This page is still in development.
                 </motion.p>
             </div>
