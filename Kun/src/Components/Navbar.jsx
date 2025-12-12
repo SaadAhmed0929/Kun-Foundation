@@ -18,6 +18,7 @@ import {
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { BsWhatsapp } from "react-icons/bs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,17 +104,29 @@ export default function Navbar() {
 
         {/* Right side (socials always visible) */}
         <div className="flex gap-3">
-          <a href="#" className="hover:text-green-400 transition">
+          <a href="https://www.facebook.com/profile.php?id=61572980026848&rdid=IVsETalcxFzrkJJ8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BxWRDfgfb%2F" 
+            className="hover:text-green-400 transition inline-flex items-center justify-center p-1" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <Facebook size={17} />
           </a>
-          <a href="#" className="hover:text-green-400 transition">
+          <a href="https://www.instagram.com/kun_foundation_org" 
+            className="hover:text-green-400 transition inline-flex items-center justify-center p-1"
+            target="_blank" 
+            rel="noopener noreferrer">
             <Instagram size={17} />
           </a>
-          <a href="#" className="hover:text-green-400 transition">
+          <a href="https://www.linkedin.com/company/kunfoundation" 
+            className="hover:text-green-400 transition inline-flex items-center justify-center p-1" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <Linkedin size={17} />
           </a>
-          <a href="#" className="hover:text-green-400 transition">
-            <Youtube size={17} />
+          <a href="https://wa.me/923284797092" 
+            className="hover:text-green-400 transition inline-flex items-center justify-center p-1"
+            target="_blank" 
+            rel="noopener noreferrer">
+            <BsWhatsapp size={17} />
           </a>
         </div>
       </div>
@@ -167,7 +180,7 @@ export default function Navbar() {
 
           {/* Donate + Menu */}
           <div className="flex items-center gap-4 xl:gap-6">
-            <Link to="/donate" className="hidden sm:inline">
+            <Link to="/donate" className="hidden sm:inline"> 
               <button
                 className={`px-5 py-2.5 text-sm xl:text-base flex items-center gap-2 font-medium rounded transition-all duration-300 transform hover:scale-[1.03] hover:shadow-md ${
                   scrolled

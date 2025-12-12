@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaArrowUp,
   FaHandsHelping,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -75,28 +76,29 @@ const Footer = () => {
         {/* Logo */}
         <div className="col-span-full md:col-span-1">
           <h2 className="text-2xl font-semibold italic mb-4 flex items-center gap-2">
-            <FaHandsHelping className="text-3xl" /> Kun Foundation
+            <img src="/images/white_logo.png" alt="Kun Foundation Logo" className="w-10 h-10" /> Kun Foundation
           </h2>
           <p className="text-sm leading-relaxed mb-4">
             When a child gets access to good education, it can change just about everything.
           </p>
           <div className="flex space-x-3">
             {[
-  { Icon: FaFacebookF, link: "https://www.facebook.com/profile.php?id=61572980026848&rdid=IVsETalcxFzrkJJ8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BxWRDfgfb%2F" },
-  { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/kunfoundation" },
-  { Icon: FaInstagram, link: "https://www.instagram.com/kun_foundation_org" },
-  { Icon: FaWhatsapp, link: "https://wa.me/923284797092" },
-].map(({ Icon, link }, i) => (
-  <a
-    key={i}
-    href={link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/10 hover:bg-white/20 p-3 rounded transition-all"
-  >
-    <Icon />
-  </a>
-))}
+                { Icon: FaFacebookF, link: "https://www.facebook.com/profile.php?id=61572980026848&rdid=IVsETalcxFzrkJJ8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BxWRDfgfb%2F" },
+                { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/kunfoundation" },
+                { Icon: FaInstagram, link: "https://www.instagram.com/kun_foundation_org" },
+                { Icon: FaWhatsapp, link: "https://wa.me/923284797092" },
+              ].map(({ Icon, link }, i) => (
+                <a
+                  key={i}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 hover:bg-white/20 p-3 rounded transition-all"
+                >
+                  <Icon />
+                </a>
+              ))
+            }
 
           </div>
         </div>

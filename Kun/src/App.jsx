@@ -7,6 +7,7 @@ import WhoWeAre from './Pages/WhoWeAre.jsx';
 import Navbar from './Components/Navbar.jsx';
 import Footer from './Sections/Footer.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx';
+import DonationPage from "./Pages/Donation.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/donate" element={<DonationPage />} />
       </Routes>
       <Footer />
     </>
